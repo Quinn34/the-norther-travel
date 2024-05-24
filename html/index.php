@@ -98,13 +98,31 @@
     </div>
     <div class="feet1">
         <div class="column">
-                
+            <div class="info-text">
+                <h1>Opleiding</h1>
+                <p>Roc-Nijmegen</p>
+                <p>Technovium</p>
+                <p>Software Development</p>
+                <p>Heyendaalseweg 98</p>
+            </div>
         </div>
         <div class="column">
-                    
+            <div class="info-text">
+                <h1>Website</h1>
+                <p>nieuws</p>
+                <p>Log-in</p>
+                <p>Register</p>
+                <p1>Terms Of Service</p1>
+            </div>
         </div>
         <div class="column">
-                        
+            <div class="info-text">
+                <h1>Developers</h1>
+                <p>Quinn van Huizen</p>
+                <p>Jop Meulmeester</p>
+                <p>Luuk Müskens</p>
+                <p>Internet</p>
+            </div>
         </div>
     </div>
     <script src="js/main.jsx"></script>
