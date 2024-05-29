@@ -16,14 +16,14 @@
         <div class="right-20">
             <div class="buttons">
             <a href="#" class="Items">Home</a>     
-            <a href="#" class= "Items">Over ons</a>
-            <a href="#" class= "Items">Reizen</a>     
+            <a href="/pages/overons.php" class= "Items">Over ons</a>
+            <a href="/pages/overons.php" class= "Items">Reizen</a>     
             <a href="#" class="Items">Contact</a>     
         </div>
     </div>
     <div class="right-5">
         <div class="buttons">
-            <a href="#" class="Items">Login</a>   
+            <a href="/pages/login.php" class="Items">Login</a>   
         </div>
     </div>
     </div>
