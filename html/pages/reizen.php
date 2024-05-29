@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/css/main.css" >
+    <link rel="stylesheet" href="css/main.css" >
 </head>
 <header>
     <div class="nav">
@@ -16,7 +16,7 @@
         <div class="right-20">
             <div class="buttons">
             <a href="/index.php" class="Items">Home</a>     
-            <a href="#" class= "Items">Over ons</a>
+            <a href="/pages/overons.php" class= "Items">Over ons</a>
             <a href="#" class= "Items">Reizen</a>     
             <a href="#" class="Items">Contact</a>     
         </div>
