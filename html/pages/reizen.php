@@ -18,7 +18,7 @@
             <a href="/index.php" class="Items">Home</a>     
             <a href="/pages/overons.php" class= "Items">Over ons</a>
             <a href="#" class= "Items">Reizen</a>     
-            <a href="#" class="Items">Contact</a>     
+            <a href="/pages/contact.php" class="Items">Contact</a>     
         </div>
     </div>
     <div class="right-5">
@@ -27,3 +27,5 @@
         </div>
     </div>
     </div>
+    <script src="js/main.jsx"></script>
+    </body>

@@ -15,10 +15,10 @@
         </div>
         <div class="right-20">
             <div class="buttons">
-            <a href="/index.php" class="Items">Home</a>     
-            <a href="#" class= "Items">Over ons</a>
-            <a href="/pages/reizen.php" class= "Items">Reizen</a>     
-            <a href="/pages/contact.php" class="Items">Contact</a>     
+            <a href="../index.php" class="Items">Home</a>     
+            <a href="/pages/overons.php" class= "Items">Over ons</a>
+            <a href="/pages/overons.php" class= "Items">Reizen</a>     
+            <a href="#" class="Items">Contact</a>     
         </div>
     </div>
     <div class="right-5">
@@ -27,9 +27,23 @@
         </div>
     </div>
     </div>
-
-
-    <!-- <div class="feet">
+    <body>
+        <div class="first-logo">
+            <img src="/assets/north travel logo.png" class="big-L">
+        </div>
+        <div class="sec-logo">
+            <img src="/assets/berug.png" class="big-B">
+        </div>
+        <div class="container-box">
+            <div class="boxbox">
+                <div class="text-c">
+                    <p>Contact us</p>
+                    <p>06 77435992+</p>
+                    <h4>Info@TheNorthTravel.nl</h4>
+                </div>
+            </div>
+        </div>
+        <div class="feet">
         <h1>Wil je op de hoogte blijven?</h1>
         <h4>Vul dan hier je email in voor weekelijkse updates</h4>
         <div class="hoogte">
@@ -64,6 +78,8 @@
                 <p>Internet</p>
             </div>
         </div>
-    </div> -->
+    </div>
     <script src="js/main.jsx"></script>
     </body>
+    </body>
+</html>
