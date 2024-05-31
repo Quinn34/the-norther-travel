@@ -294,3 +294,19 @@ p1{
     color: grey;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
+.container-text{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 1000px;
+    /* text-align: center; */
+}
+.mid-text1{
+    margin-top: 200px;
+    height: 1000px;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+    font-weight: 530;
+}
