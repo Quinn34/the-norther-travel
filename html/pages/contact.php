@@ -17,7 +17,8 @@
             <div class="buttons">
             <a href="../index.php" class="Items">Home</a>     
             <a href="/pages/overons.php" class= "Items">Over ons</a>
-            <a href="/pages/overons.php" class= "Items">Reizen</a>     
+            <a href="/pages/overons.php" class= "Items">Reizen</a>    
+            <a href="/pages/order.php" class= "Items">Order page</a> 
             <a href="#" class="Items">Contact</a>     
         </div>
     </div>
@@ -79,6 +80,7 @@
             </div>
         </div>
     </div>
+    <a href="/pages/order.php" class= "Items">Order page</a>
     <script src="js/main.jsx"></script>
     </body>
     </body>
