@@ -126,3 +126,19 @@ body{
     width: 15%;
     margin-left: 5%;
 }
+.buttons{
+  display: flex;
+  flex-direction: row;
+  margin: 45px;
+  font-weight: 600;
+  font-size: 20px;
+  justify-content: space-between;
+}
+a{
+  text-decoration: none !important;
+  color: white;
+}
+.kook{
+  height: 100px;
+  width: auto;
+}
