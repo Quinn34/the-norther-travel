@@ -6,15 +6,12 @@
     font-family: 'Montserrat', sans-serif;
 }
 body{
-    background-image: url(/assets/weerled.png);
-    background-size: cover;
-    background-attachment: fixed;
-
+    background-color: #E7E7E7;
 }
 .nav {
     height: 120px;
     width: 100%;
-    background-color: #1818A7;
+    background-color: #5252fd;
     display: flex;
     flex-direction: row;
     position: fixed;
@@ -331,7 +328,7 @@ a{
 /* begin login  */
 .nav-opvul{
     width: auto;
-    background-color: rebeccapurple;
+    height: 350px;
 }
 .container-login{
     width: auto;
@@ -340,16 +337,15 @@ a{
     justify-content: center;
     align-items: center;
 }
-form{
-   margin-top: 250px; 
+.login-form{
+   /* margin-top: 250px; */
 }
 .input {
     height: 100px;
     width: 300px;
-    background-color: #C0E291;
+
 }
 input{
-    color: green;
     height: 50px;
     width: 200px;
     border-radius: 20px;
@@ -358,5 +354,55 @@ input{
     height: 30px;
     width: 100px ;
 }
-
+.row111{
+    height: 150px;
+    width: 100%;
+}
+.row55{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+    justify-content: space-around;
+}
+.full-login{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+.register_form{
+    height: 600px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-top: 100px;
+    justify-content: space-around;
+    font-size: 25px;
+    text-align: center;
+}
+.mid {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    justify-content: space-around;
+}
+.button-log{
+    height: 75px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: #5252fd;
+    color: black;
+    font-size: 26px;
+    font-weight: 600;
+}
+.back-sh{
+    height: 30px;
+    width: 200px;
+    margin-left: 50px;
+}
+.backi{
+    color: black;
+    font-size: 25px;
+}
 /* eind login  */
