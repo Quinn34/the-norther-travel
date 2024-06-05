@@ -403,3 +403,35 @@ input{
     font-size: 25px;
 }
 /* eind login  */
+/* begin producten pagina */
+.container-reizen{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 15px;
+}
+.box{
+    width: 100%;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    background-color: #5252fd;
+    flex-direction: column;
+
+}
+.container-reizen-page {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    column-gap: 5%;
+    flex-wrap: wrap;
+}
+
+.rijzen-fotos{
+    width: 100%;
+}
+.text-menu{
+
+}
+/* eind producten pagina */
