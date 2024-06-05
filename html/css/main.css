@@ -11,7 +11,7 @@ body{
 .nav {
     height: 120px;
     width: 100%;
-    background-color: #1818A7;
+    background-color: #5252fd;
     display: flex;
     flex-direction: row;
     position: fixed;
@@ -50,18 +50,18 @@ a{
 }
 .rome{
     width: 100%;
-    height: 950px;
+    height: 650px;
 }
 .slider {
     width: 100%;
-    height: 950px;
+    height: 650px;
     background: url(/assets/1.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     animation: slide 40s infinite;
 }
 .all-images{
-    height: 950px;
+    height: 650px;
     width: 100%;
 }
 
@@ -123,7 +123,7 @@ a{
     height: 200px;
     display: flex;
     flex-direction: column;
-    background-color: #1818A7;
+    background-color: #5252fd;
 }
 .stay{
     color: white;
@@ -178,7 +178,7 @@ a{
     margin-left: 5px;
 }
 .smallerbox{
-    background-color: #1818A7;
+    background-color: #5252fd;
     width: 112px;
     height: 100%;
     border:1px solid rgb(206, 206, 12);
@@ -198,7 +198,9 @@ a{
     margin-left: 190px;
 }
 .row1{
-    height: 400px;
+
+    height: 600px;
+
     width: 100%;
     background-color: #E7E7E7;
     display: flex;
@@ -211,10 +213,85 @@ a{
     height: 100%;
     border-radius: 10px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
 }
 .img1{
-    height: 100%;
+    height: 400px;
     width: 100%;
 }
+.blue-box{
+    background-color: #5252fd;
+    color: #E7E7E7;
+    width: 150px;
+    height: 50px;
+    border-radius: 60px;
+    margin-top: 50px;
+}
+.reclame{
+    border-radius: 15px;
+    width: 1000px;
+    height: 400px;
+}
+.feet{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    background-color: #5252fd;
+    align-items: center;
+    color: white;
+}
+.column{
+    height: 400px;
+    width: 100%;
+    background-color: #5252fd;
+    display: flex;
+    flex-direction: row;
+}
+.hoogte{
+    height: 80px;
+    background-color: white;
+    width: 700px;
+    border-radius: 20px;
+}
+.mail{
+    color: black;
+    border: none;
+    background-color: #E7E7E7;
+    height: 100%;
+    width: 700px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+.feet1{    
+    display: flex;
+    flex-direction: row;
+}
+.column{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    row-gap: 20px;
+    background-color: #5252fd;
+    color: white;
+}
+
+.info-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 35%;
+    font-size: 20px;
+}
+
+p1{
+    color: yellow;
+}
+.buttons :hover{
+    color: grey;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+    
