@@ -36,13 +36,13 @@
         
 </div>
  <div class="full-login">
-    <form class='register_form' action='login_logic.php' name='login_logic'method="POST">
+    <form class='register_form' action='login-logic.php' name='login_logic'method="POST">
         <div class="mid">
             <h3>Log In</h3>
         </div>
         <div class="row55">
             <p>Email user</p>
-            <input type="Email" name="Email" placeholder="   Vul Email in" required/>
+            <input type="email" name="email" placeholder="   Vul Email in" required/>
         </div>
     <div class="row55">
         <p>Wachtwoord</p>
