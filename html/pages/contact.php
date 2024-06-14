@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/main.css" >
-    <script src="https://kit.fontawesome.com/d413367d22.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/main.css" >
 </head>
 <header>
     <div class="nav">
@@ -16,10 +15,10 @@
         </div>
         <div class="right-20">
             <div class="buttons">
-            <a href="#" class="Items">Home</a>     
+            <a href="../index.php" class="Items">Home</a>     
             <a href="/pages/overons.php" class= "Items">Over ons</a>
-            <a href="#" class= "Items">Reizen</a>     
-            <a href="/pages/contact.php" class="Items">Contact</a>     
+            <a href="/pages/overons.php" class= "Items">Reizen</a>    
+            <a href="#" class="Items">Contact</a>     
         </div>
     </div>
     <div class="right-5">
@@ -29,34 +28,22 @@
     </div>
     </div>
     <body>
-    <div class="slider">
-        <div class="all-images">
-
+        <div class="first-logo">
+            <img src="/assets/north travel logo.png" class="big-L">
         </div>
-    </div>
-    <div class="row111">
-        
-    </div>
-    <div class="row1">
-        <div class="box">
-            <img src="/assets/chinatown.jpeg" class="img1">
-            <input type="submit" name="submit" value='Search' class="blue-box"/>
+        <div class="sec-logo">
+            <img src="/assets/berug.png" class="big-B">
         </div>
-        <div class="box">
-        <img src="/assets/chinatown1.jpeg" class="img1">
-        <input type="submit" name="submit" value='Search' class="blue-box"/>
+        <div class="container-box">
+            <div class="boxbox">
+                <div class="text-c">
+                    <p>Contact us</p>
+                    <p>06 77435992+</p>
+                    <h4>Info@TheNorthTravel.nl</h4>
+                </div>
+            </div>
         </div>
-        <div class="box">
-        <img src="/assets/scania.jpeg" class="img1">
-        <input type="submit" name="submit" value='naar' class="blue-box"/>
-        </div>
-    </div>
-    <div class="row1">
-        <div class="box1">
-            <img src="/assets/reclame.png" class="reclame">
-        </div>
-    </div>
-    <div class="feet">
+        <div class="feet">
         <h1>Wil je op de hoogte blijven?</h1>
         <h4>Vul dan hier je email in voor weekelijkse updates</h4>
         <div class="hoogte">
@@ -92,6 +79,8 @@
             </div>
         </div>
     </div>
+    <a href="/pages/order.php" class= "Items">Order page</a>
     <script src="js/main.jsx"></script>
     </body>
-</header>
+    </body>
+</html>
