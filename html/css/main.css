@@ -209,6 +209,7 @@ a{
     justify-content: space-around;
 }
 .box{
+    margin-top: 150px;
     width: 400px;
     height: 100%;
     border-radius: 10px;
@@ -360,4 +361,65 @@ p1{
     margin-top: 90px;
     font-size: 60px;
     font-weight: 700;
+}
+
+.back-sh{
+    height: 30px;
+    width: 200px;
+    margin-left: 50px;
+}
+.full-login{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+.row555{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.in-out{
+    text-align: center;
+}
+.row112{
+    height: 200px;
+    width: 100%;
+}
+.logoutt{
+    font-size: 25px;
+    color: black;
+    text-align: center;
+
+}
+.register_form{
+    height: 500px;
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-top: 100px;
+    justify-content: space-around;
+    font-size: 25px;
+    text-align: center;
+}
+.button-log{
+    height: 100px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: #5252fd;
+    font-size: 30px;
+    font-weight: 600;
+}
+input{
+    height: 50px;
+    width: 300px;
+    background-color: #5252fd;
+    border-radius: 15px;
+}
+::placeholder {
+    color: white;
 }

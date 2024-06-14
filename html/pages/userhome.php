@@ -35,24 +35,14 @@
         </div>
     </div>
     </div>
+    <body>
     <div class="row112">
-
+        
     </div>
-    <div class="in-out">
-            <h1>Je bent succesvol ingelogd als admin!!!</h1>
+
+        <div class="in-out">
+            <h1>Je bent succesvol ingelogd!!!</h1>
             <br><br><br>
             <a href="logout.php"class="logoutt">KLIK HIER om uit te loggen</a>     
         </div>
-
-        <div class="full-login">
-            <form class='register_form' action='user_delete_logic.php' name='user_delete_logic'method="POST">
-            <label>gebruiker verwijderen</label>
-                <div class="row55">
-                    <label>Id van user: </label> 
-                    <input type="text" name="id_user"placeholder="   id of user" required>
-                </div>
-                <div class="row55">
-                    <input type="submit" value='delete user' class="button-log"/>
-                </div>
-            </form>
-        </div>
+    </body>

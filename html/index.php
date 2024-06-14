@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/main.css" >
+    <script src="https://kit.fontawesome.com/d413367d22.js" crossorigin="anonymous"></script>
 </head>
 <header>
     <div class="nav">
@@ -33,42 +34,8 @@
 
         </div>
     </div>
-    <div class="container3">
-        <div class="stay">
-            <p>Find your next stay</p>
-        </div>
-        <div class="find">
-            <p>Search low prices on hotels, homes and much more...</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="forms">
-            <div class="little-box">
-                <img src="/assets/bed.png"class="bed">
-                <form>
-                    <input type="text" placeholder="  Where are you going?" class="where">
-                </form>            
-            </div>
-            <div class="little-box">
-            <img src="/assets/cal.png"class="bed">
-                <form>
-                    <input type="text" placeholder="Check-in date -- Check-out date" class="where">
-                </form>      
-            </div>
-            <div class="little-box">
-            <img src="/assets/person.png"class="bed">
-                <form>
-                    <input type="text" placeholder="0 adults - 0 childeren - 0 rooms" class="where">
-                </form>      
-            </div>
-            <div class="smallerbox">
-                <input type="submit" name="submit" value='Search' class="smallerbox"/>
-            </div>
-        </div>
-        <div class="checkbox">
-            <input type="checkbox" class="check">
-            <p>I'm looking for flights</p>
-        </div>
+    <div class="row111">
+        
     </div>
     <div class="row1">
         <div class="box">
