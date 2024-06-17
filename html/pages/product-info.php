@@ -32,27 +32,31 @@ $userID=$_GET['id'];
 
 
 <?php
-    $stmt = $connection->query("SELECT products.name
+    $stmt = $connection->query("SELECT products.name, products_Info.kamers, products_Info.nachten
     FROM products
-    INNER JOIN products_Info
-    ON products.id=products_Info.id");
+    INNER JOIN products_Info    
+    ON products.id=products_Info.id
+    WHERE products.id = $userID");
     while ($row = $stmt->fetch()) {
         echo '<div class="conatainer-product-info">';
         echo '<img class="hotel" src="../assets/hotel.png" alt="">';
-
-
-
-
-
-
-
-
-
+        echo '<div class="bar-product-info">';
+        echo '<div class="row-bar-info-35">';
+        echo $row['kamers'] ."<br />\n";
+        echo '<div class="row-bar-info-35">';
+        echo $row['nachten'] ."<br />\n";
+        echo '<div class="row-bar-info-30">';
+        echo ' <input class="buton-reizen" <a href="product-info.php?id=echo[id] $GET</a> type="submit" name="submit" value="Submit">';
+        echo '</div>';
+        echo '</div>';
+        echo '</div>';
+        echo '</div>';
+        echo '</div>';
         // echo '<img class="rijzen-fotos" src="../assets/chinatown1.jpeg" alt="">';
         //      echo '<div class="text-menu">';
         //      echo '<div class="container-name">';
         //    //    echo '<a href="product-info.php?id=' . $row['id'] . '">';
-        //      echo $row['name'] ."<br />\n";
+            //  echo $row['name'] ."<br />\n";
         //      echo '</div>';
         //      echo '<div class="container-info">';
         //       echo $row['omschrijving'] ."<br/>\n";
@@ -60,11 +64,11 @@ $userID=$_GET['id'];
         //       echo $row['omschrijving_3'] ."<br/>\n";
         //       echo '</div>';
         //    echo '<div class="container-button">';
-        //    //    echo ' <input class="buton-reizen" <a href="product-info.php?id=echo[id] $GET</a> type="submit" name="submit" value="Submit">';
+            //   echo ' <input class="buton-reizen" <a href="product-info.php?id=echo[id] $GET</a> type="submit" name="submit" value="Submit">';
         //       echo '</div>';
 
-        //       echo '</div>';
-        //       echo '</div>';
+            //   echo '</div>';
+            //   echo '</div>';
         //       echo '</a>';
 
 

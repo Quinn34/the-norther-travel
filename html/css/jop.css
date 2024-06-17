@@ -265,6 +265,13 @@ a{
     display: flex;
     flex-direction: column;
 }
+.col-35{
+    width: 35%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    
+}
 .col-30{
     width: 30%;
     height: auto;
@@ -482,5 +489,13 @@ height: 150px;
 .conatainer-product-info{
     width: auto;
     height: 2000px;
-    background-color: ;
+    background-color: black;
+}
+.hotel{
+    width: 100%;
+}
+.bar-product-info{
+    width: auto;
+    height: 100px;
+    background-color: red;
 }
