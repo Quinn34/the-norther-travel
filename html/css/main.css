@@ -46,7 +46,7 @@ body{
 }
 a{
     text-decoration: none !important;
-    color: white;
+    color: black;
 }
 .rome{
     width: 100%;
@@ -422,4 +422,36 @@ input{
 }
 ::placeholder {
     color: white;
+}
+
+.product_form{
+    height: 600px;
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-top: 100px;
+    justify-content: space-around;
+    font-size: 25px;
+    text-align: center;
+    column-gap: 50px; ;
+}
+.update{
+    height: 500px;
+    width: 900px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 25px;
+    text-align: center;
+    color: black;
+}
+.mooi{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: 600px;
+    color: black;
 }

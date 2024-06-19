@@ -18,7 +18,7 @@
             <div class="buttons">
             <a href="#" class="Items">Home</a>     
             <a href="/pages/overons.php" class= "Items">Over ons</a>
-            <a href="#" class= "Items">Reizen</a>     
+            <a href="/pages/reizen.php" class= "Items">Reizen</a>     
             <a href="/pages/contact.php" class="Items">Contact</a>     
         </div>
     </div>
@@ -77,8 +77,8 @@
             <div class="info-text">
                 <h1>Website</h1>
                 <p>nieuws</p>
-                <p>Log-in</p>
-                <p>Register</p>
+                <a href="/pages/login.php">Login</a>
+                <a href="/pages/register.php">Register</a>
                 <p1>Terms Of Service</p1>
             </div>
         </div>

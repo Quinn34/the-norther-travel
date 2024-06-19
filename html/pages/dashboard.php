@@ -56,3 +56,33 @@
                 </div>
             </form>
         </div>
+        <div class="full-login">
+            <form class='product_form' action='reis_logic.php' name='reis_logic' method="post">
+            <div class="row555">
+                <label>Nieuw product (Eten)</label> 
+                <input type="text" name="name"placeholder="   Naam" required>
+                <input type="text" name="omschrijving"placeholder="   omschrijving" >
+                <input type="text" name="omschrijving_2"placeholder="   omschrijving_2" >
+                <input type="text" name="omschrijving_3"placeholder="   omschrijving_3" >
+            </div>
+            <div class="row55">
+                <input type="submit" value='Maak product' class="button-log"/>
+            </div>
+            </form>
+        </div>
+        <div class="full-login">
+            <div class="update">
+                <?php
+            $stmt = $connection->prepare("SELECT * FROM users");
+            $stmt->execute();
+            $data = $stmt->fetchAll();
+            
+            
+            foreach ($data as $row) {
+                echo '<div class="mooi";>';
+                echo "<a href='/pages/user_update.php?id=". $row['id']."'>update</a>";
+                echo '</div>';
+            }
+            ?>
+            </div>
+        </div>
