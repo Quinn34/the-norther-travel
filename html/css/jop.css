@@ -6,7 +6,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 body{
-
+    background-color: #E7E7E7;
 }
 .nav {
     height: 120px;
@@ -353,7 +353,6 @@ a{
 
 }
 input{
-    color: green;
     height: 50px;
     width: 200px;
     border-radius: 20px;
@@ -361,6 +360,10 @@ input{
 .button{
     height: 30px;
     width: 100px ;
+}
+.row111{
+    height: 150px;
+    width: 100%;
 }
 .row55{
     display: flex;
