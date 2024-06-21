@@ -2,7 +2,7 @@
     session_start();
     include 'conn.php';
     if (!isset($_SESSION["email"])) {
-        header("Location: x.php");
+        header("Location: /pages/login.php");
         exit(); 
     }
 ?>
@@ -43,7 +43,13 @@
             <br><br><br>
             <a href="logout.php"class="logoutt">KLIK HIER om uit te loggen</a>     
         </div>
-
+        <div class="search-container">
+        <h2>Zoek gebruiker</h2>
+        <form action="search-logic.php" method="POST">
+            <input type="text" name="search" placeholder="Voer voornaam in...">
+            <input type="submit" value="Zoeken">
+        </form>
+    </div>
         <div class="full-login">
             <form class='register_form' action='user_delete_logic.php' name='user_delete_logic'method="POST">
             <label>gebruiker verwijderen</label>
@@ -59,7 +65,7 @@
         <div class="full-login">
             <form class='product_form' action='reis_logic.php' name='reis_logic' method="post">
             <div class="row555">
-                <label>Nieuw product (Eten)</label> 
+                <label>Nieuwe Reis</label> 
                 <input type="text" name="name"placeholder="   Naam" required>
                 <input type="text" name="omschrijving"placeholder="   omschrijving" >
                 <input type="text" name="omschrijving_2"placeholder="   omschrijving_2" >
@@ -70,7 +76,7 @@
             </div>
             </form>
         </div>
-        <div class="full-login">
+        <div class="fulls-login">
             <div class="update">
                 <?php
             $stmt = $connection->prepare("SELECT * FROM users");
@@ -78,8 +84,11 @@
             $data = $stmt->fetchAll();
             
             
+            echo 'Update usertype id = email';
             foreach ($data as $row) {
                 echo '<div class="mooi";>';
+                echo 'id number = ';
+                echo $row['id'];
                 echo "<a href='/pages/user_update.php?id=". $row['id']."'>update</a>";
                 echo '</div>';
             }
