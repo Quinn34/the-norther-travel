@@ -218,9 +218,6 @@ a{
     height: 100%;
     width: 100%;
 }
-
-
-
 /* jop begin */
 /* hulp midelen */
 .col-100{
@@ -270,7 +267,7 @@ a{
     height: auto;
     display: flex;
     flex-direction: column;
-    
+   
 }
 .col-30{
     width: 30%;
@@ -350,7 +347,7 @@ a{
 .input {
     height: 100px;
     width: 300px;
-
+ 
 }
 input{
     height: 50px;
@@ -415,8 +412,8 @@ input{
 /* eind login  */
 /* begin producten pagina */
 .tussen-stuk{
-width: auto;
-height: 100%px;
+    width: auto;
+    height: 120px;
 }
 .container-reizen{
     width: 32%;
@@ -469,7 +466,7 @@ height: 100%px;
      width: 50px;
     height: 30px;
     color: black;
-} 
+}
 .text-menu{
     display: flex;
     flex-direction: column;
@@ -491,7 +488,7 @@ height: 100%px;
 /* begin info product pagina */
 .conatainer-product-info{
     width: auto;
-    height: 2000px;
+    height: 1700px;
     /* background-color: black; */
 }
 .row-bar-info-40{
@@ -524,7 +521,7 @@ height: 100%px;
 }
 .center{
     font-size: 23px;
-
+ 
     text-align: center;
     justify-content: center;
     height: 100px;
@@ -534,11 +531,11 @@ height: 100%px;
     row-gap: 4px;
 }
 .center-detail{
-
+ 
     margin-top: 40px;
     text-align: center;
     justify-content: center;
-    
+   
     /* margin-bottom: 5px; */
     display: flex;
     flex-direction: row;
@@ -566,7 +563,6 @@ td{
   height: 600px;
   display: flex;  
   flex-direction: row;
-  background-color: beige;
 }
 .container-col{
     display: flex;
@@ -577,12 +573,10 @@ td{
     height: 600px;
     display: flex;  
     flex-direction: row;
-    background-color: aqua;
   }
   .foto-klein{
     width: 100%;
     height: 300px;
-    background-color: green;
 }
 .hotel2{
     width: 100%;
@@ -597,7 +591,7 @@ td{
    
 }
 .text-vlak-klm{
-    background-color: red;
+    margin-top: 100px;
     width: 100%;
     height: 75px;
     text-align: center;
@@ -610,7 +604,7 @@ td{
 }
 .container-text-vlak-product-info{
     width: 100%;
-    height: 600px;
+    height: 450px;
     background-color: rgb(77, 122, 162);
     display: flex;
     justify-content: center;
@@ -620,4 +614,10 @@ td{
 }
 .prouduct-info-info{
     height: 270px;
+}
+h3 {
+    font-size: 30px;
+}
+h7 {
+    font-size: 20px;
 }

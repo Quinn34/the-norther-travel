@@ -58,7 +58,7 @@ a{
     background: url(/assets/1.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
-    animation: slide 40s infinite;
+    animation: slide 50s infinite;
 }
 .all-images{
     height: 650px;
@@ -242,7 +242,7 @@ a{
     row-gap: 20px;
     background-color: #5252fd;
     align-items: center;
-    color: white;
+    color: black;
 }
 .column{
     height: 400px;
@@ -276,7 +276,7 @@ a{
     flex-direction: row;
     row-gap: 20px;
     background-color: #5252fd;
-    color: white;
+    color: black;
 }
 
 .info-text{

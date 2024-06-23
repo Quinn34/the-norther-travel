@@ -12,8 +12,8 @@ $userID=$_GET['id'];
             <div class="buttons">
             <a href="/index.php" class="Items">Home</a>     
             <a href="/pages/overons.php" class= "Items">Over ons</a>
-            <a href="#" class= "Items">Reizen</a>     
-            <a href="#" class="Items">Contact</a>     
+            <a href="/pages/reizen.php" class= "Items">Reizen</a>     
+            <a href="/pages/contact.php" class="Items">Contact</a>     
         </div>
     </div>
     <div class="right-5">
@@ -24,6 +24,7 @@ $userID=$_GET['id'];
     </div>
     <div class="tussen-stuk"></div>
     <link rel="stylesheet" href="/css/jop.css">
+    <link rel="stylesheet" href="/css/main.css">
 <?php
     $stmt = $connection->query("SELECT *
     FROM products
@@ -42,7 +43,7 @@ $userID=$_GET['id'];
         echo '<div class="row-bar-info-40">';
         echo '<div class="center">';
         echo '<div class="center-detail">';
-        echo '<p>Aantal personen:</p>';
+        echo '<p>Aantal Kamers:</p>';
         echo  $row['kamers'] ."<br />\n";
         echo '</div>';
         echo '</div>';
@@ -62,7 +63,7 @@ $userID=$_GET['id'];
         echo '<div class="center-detail">';
         ?>
         <!-- echo ' <a href="product-info.php?id=echo[id] $GET> submit</a> ';  -->
-        <td><a class="button-products" href='../pages/reizen.php?id=<?php echo $row['id'];?>'>Bestel</a><td>
+        <td><a class="button-products" href='../pages/order.php?id=<?php echo $row['id'];?>'>Bestel</a><td>
         <?php
          echo '</div>';
         echo '</div>';
@@ -73,14 +74,40 @@ $userID=$_GET['id'];
         echo '<div class="foto-klein">';
         echo '<img class="hotel2" src="../assets/hotel.png" alt="">';
         echo '<div class="prouduct-info-info">';
+        echo '<br>';
+        echo '<h3>';
         echo $row['omschrijving'] ."<br/>\n";
+        echo '<br>';
         echo $row['omschrijving_2'] ."<br/>\n";
+        echo '<br>';
         echo $row['omschrijving_3'] ."<br/>\n";
+        echo '<br>';
+        echo $row['rating'] ."<br/>\n";
+        echo '<br>';
+        echo $row['hasPool'] ."<br/>\n";
+        echo '<br>';
+        echo $row['hasFitness'] ."<br/>\n";
+        echo '<br>';
+        echo $row['price'] ."<br/>\n";
+        echo '</h3>';
         echo '</div>';
         echo '<div class="tussen-vlak-product">';
         echo '</div>';
         echo '<div class="text-vlak-klm">';
-        echo '<a> de vlucht een inclusive een vlugt van klm  </>';
+        echo '</div>';
+        echo '<div class="full-logiin">
+            <form class="regiister_form" action="recensie_logic.php" name="login_logic"method="POST">
+            <div class="mid">
+            <h3>Laat hier je recensie achter</h3>
+            </div>
+            <div class="row55">
+            <p>recensie</p>
+            <input type="text" name="recensie" placeholder="   Vul hier je recensie in"/>
+            </div>
+            <div class="row55">
+            <input type="submit" name="submit" value="verstuur" class="button-lag"/>
+            </div>
+            </form>';
         echo '</div>';
 
 
@@ -107,37 +134,16 @@ $userID=$_GET['id'];
         echo '<a> dagelijkse routine geeft nieuwe inzichten en perspectieven. Historische plaatsen kunnen diepe indrukken achterlaten, en de natuur kan rust en verwondering brengen die moeilijk in woorden te vatten is.
         Bovenal creëert reizen onvergetelijke herinneringen. Foto’s, souvenirs en verhalen worden gekoesterd en gedeeld met vrienden en familie. Elke reis, dichtbij of ver weg, verandert de reiziger. Het laat sporen achter in ons hart en verrijkt ons met ervaringen die onze kijk op de wereld verbreden. </>';
         echo '</div>';
+    }
+    echo '<br>';
+    echo '<h3> recensies</h3>';
 
-         // echo '<div class="container-info-product">';
-        // echo '</div>';
+        $stmt = $connection->query("SELECT * FROM recensies");
+          while ($row = $stmt->fetch()) {
+            echo '<h7>';
+            echo  $row['id'] ."<br />\n";
+            echo  $row['recensie'] ."<br />\n";
+            echo '</h7>';
+          }
 
-
-        // echo '<img class="rijzen-fotos" src="../assets/chinatown1.jpeg" alt="">';
-        //      echo '<div class="text-menu">';
-        //      echo '<div class="container-name">';
-        //    //    echo '<a href="product-info.php?id=' . $row['id'] . '">';
-            //  echo $row['name'] ."<br />\n";
-        //      echo '</div>';
-        //      echo '<div class="container-info">';
-        //       echo $row['omschrijving'] ."<br/>\n";
-        //       echo $row['omschrijving_2'] ."<br/>\n";
-        //       echo $row['omschrijving_3'] ."<br/>\n";
-        //       echo '</div>';
-        //    echo '<div class="container-button">';
-            //   echo ' <input class="buton-reizen" <a href="product-info.php?id=echo[id] $GET</a> type="submit" name="submit" value="Submit">';
-        //       echo '</div>';
-
-            //   echo '</div>';
-            //   echo '</div>';
-        //       echo '</a>';
-
-
-
-
-
-
-
-
-
-}
 ?>

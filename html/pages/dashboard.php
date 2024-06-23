@@ -25,7 +25,7 @@
             <div class="buttons">
             <a href="../index.php" class="Items">Home</a>     
             <a href="/pages/overons.php" class= "Items">Over ons</a>
-            <a href="#" class= "Items">Reizen</a>     
+            <a href="/pages/reizen.php" class= "Items">Reizen</a>     
             <a href="/pages/contact.php" class="Items">Contact</a>     
         </div>
     </div>

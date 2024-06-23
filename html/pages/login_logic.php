@@ -13,7 +13,6 @@ include 'conn.php';
     $stmt = $connection->prepare("SELECT * FROM users WHERE email=:email AND password=:pass");
     $stmt->execute(["email" => $email,'pass' => $password]);
     $user = $stmt ->fetch(); 
-    // $row = $stmt ->fetch();
 
     if($user["usertype"]=="user")
     {
