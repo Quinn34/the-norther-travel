@@ -1,3 +1,7 @@
+<?php
+require 'conn.php';
+$userID=$_GET['id'];
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +10,12 @@
     <title>Document</title>
     <link rel="stylesheet" href="/css/luuk.css" >
 </head>
-<header>
+<?php
+
+        $stmt = $connection->query("SELECT * FROM products  WHERE products.id = $userID");
+        while ($row = $stmt->fetch()) {
+            ?>
+        <header>
     <div class="nav">
         <div class="left-75">
             <div class="name">
@@ -50,10 +59,10 @@
           
             <div class="row">
               <div class="col-50">
-                <label for="land">Aantal personen</label>
+                <!-- <label for="land">Aantal personen</label>
                 <input type="text" id="land" name="land" placeholder="0">
                 <label for="land">Aantal nachten</label>
-                <input type="text" id="land" name="land" placeholder="0">
+                <input type="text" id="land" name="land" placeholder="0"> -->
               </div>
           </div>
 
@@ -85,9 +94,12 @@
           <b>1</b>
         </span>
       </h4>
-      <p><a href="#">Product 1</a> <span class="price">$1900</span></p>
+      <?php
+      echo  $row['price'] ."<br />\n";
+      ?>
       <hr>
-      <p>Total <span class="price" style="color:rgb(0, 0, 0)"><b>$1900</b></span></p>
+      <!-- <p>Total <span class="price" style="color:rgb(0, 0, 0)"><b></b></span></p> -->
     </div>
   </div>
 </div>
+          <?php } ?>
