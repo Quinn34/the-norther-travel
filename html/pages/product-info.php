@@ -111,10 +111,6 @@ $userID=$_GET['id'];
         echo '</div>';
 
 
-
-
-
-
         echo '</div>';
         echo '</div>';
         echo '<div class="col-501">';
@@ -123,6 +119,7 @@ $userID=$_GET['id'];
         echo  $row['name'] ."<br />\n";
         echo '<div class="tussen-vlak-product">';
         echo '</div>';
+
 
         echo '<div class="font-size">';
         echo '<a> De voorbereiding is vaak al een avontuur op zich. Het uitzoeken van bestemmingen, plannen van routes en boeken van accommodaties dragen bij aan de voorpret. Sommigen kiezen voor spontane trips zonder uitgebreide planning, terwijl anderen elk detail zorgvuldig uitstippelen.
@@ -134,16 +131,27 @@ $userID=$_GET['id'];
         echo '<a> dagelijkse routine geeft nieuwe inzichten en perspectieven. Historische plaatsen kunnen diepe indrukken achterlaten, en de natuur kan rust en verwondering brengen die moeilijk in woorden te vatten is.
         Bovenal creëert reizen onvergetelijke herinneringen. Foto’s, souvenirs en verhalen worden gekoesterd en gedeeld met vrienden en familie. Elke reis, dichtbij of ver weg, verandert de reiziger. Het laat sporen achter in ons hart en verrijkt ons met ervaringen die onze kijk op de wereld verbreden. </>';
         echo '</div>';
-    }
-    echo '<br>';
-    echo '<h3> recensies</h3>';
+        echo '<div class="tussen-vlak-product">';
+        echo '</div>';
+        echo '<div class="tussen-vlak-product">';
+        echo '</div>';
+        
+        
 
+
+    }
+    echo '<div class="container-recensties">';
+        echo '<br>';
+        echo '<h3 > recensies</h3>';
+        echo '</div>';
         $stmt = $connection->query("SELECT * FROM recensies");
           while ($row = $stmt->fetch()) {
+            echo '<div class="container-recensties">';
             echo '<h7>';
             echo  $row['id'] ."<br />\n";
             echo  $row['recensie'] ."<br />\n";
             echo '</h7>';
+            echo '</div>';
           }
 
 ?>
