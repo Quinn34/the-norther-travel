@@ -101,9 +101,15 @@ $userID=$_GET['id'];
             <h3>Laat hier je recensie achter</h3>
             </div>
             <div class="row55">
+            <p>Usernaam</p>
+            <input type="text" name="username" placeholder="   Vul hier een usernaam in"/>
+            </div>
+            <br>
+            <div class="row55">
             <p>recensie</p>
             <input type="text" name="recensie" placeholder="   Vul hier je recensie in"/>
             </div>
+            <br>
             <div class="row55">
             <input type="submit" name="submit" value="verstuur" class="button-lag"/>
             </div>
@@ -141,7 +147,7 @@ $userID=$_GET['id'];
         $stmt = $connection->query("SELECT * FROM recensies");
           while ($row = $stmt->fetch()) {
             echo '<h7>';
-            echo  $row['id'] ."<br />\n";
+            echo  $row['username'] ."<br />\n";
             echo  $row['recensie'] ."<br />\n";
             echo '</h7>';
           }
