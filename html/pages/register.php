@@ -41,7 +41,7 @@
         </div>
         <div class="mid">
             <h3>Register</h3>
-        </div> 
+        </div>
         <div class="row55">
             <p>Email user</p>
             <input type="Email" name="Email" placeholder="   Vul Email in" required/>

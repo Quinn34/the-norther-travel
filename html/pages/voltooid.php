@@ -1,11 +1,3 @@
-<?php
-    session_start();
-    include 'conn.php';
-    if (!isset($_SESSION["email"])) {
-        header("Location: x.php");
-        exit(); 
-    }
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,15 +26,11 @@
             <a href="/pages/login.php" class="Items">Login</a>   
         </div>
     </div>
-    </div>
-    <body>
-    <div class="row112">
-        
-    </div>
-
-        <div class="in-out">
-            <h1>Je bent succesvol ingelogd!!!</h1>
+    </div>   
+    <div class="row112"></div>
+    <div class="in-out">
+            <h1>Betaling voltooid</h1>
+            <h2>Bedankt voor het boeken bij ons nieuwe bedrijf</h2>
             <br><br><br>
-            <a href="logout.php"class="logoutt">KLIK HIER om uit te loggen</a>     
+            <a href="../index.php"class="logoutt">Terug naar home</a>     
         </div>
-    </body>
