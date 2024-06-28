@@ -45,7 +45,7 @@
           while ($row = $stmt->fetch()) {
             
              
-            echo '<a class="container-reizen" href="product-info.php?id=' . $row['id'] . '">';
+            echo '<a class="container-reizen" href="user_product-info.php?id=' . $row['id'] . '">';
 
         
             //  echo '<a href="product-info.php?id=' . $row['id'] . '">';
