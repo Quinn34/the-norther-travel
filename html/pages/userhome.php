@@ -43,6 +43,6 @@
         <div class="in-out">
             <h1>Je bent succesvol ingelogd!!!</h1>
             <br><br><br>
-            <a href="logout.php"class="logoutt">KLIK HIER om uit te loggen</a>     
+            <a href="/pages/user_home_page.php"class="logoutt">KLIK HIER om naar user home page</a>     
         </div>
     </body>

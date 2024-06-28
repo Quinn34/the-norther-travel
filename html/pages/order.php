@@ -86,7 +86,6 @@ $userID=$_GET['id'];
       </form>
     </div>
   </div>
-
   <div class="col-25">
     <div class="container">
       <h4>wagentje
