@@ -63,7 +63,7 @@ $userID=$_GET['id'];
         echo '<div class="center-detail">';
         ?>
         <!-- echo ' <a href="product-info.php?id=echo[id] $GET> submit</a> ';  -->
-        <td><a class="button-products" href='../pages/order.php?id=<?php echo $row['id'];?>'>Bestel</a><td>
+        <td><a class="button-products" href='../pages/order_user.php?id=<?php echo $row['id'];?>'>Bestel</a><td>
         <?php
          echo '</div>';
         echo '</div>';
