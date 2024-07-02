@@ -24,3 +24,19 @@ document.addEventListener('DOMContentLoaded', function() {
         termsPopup.style.display = 'none';
     });
 });
+
+function bookSearch(products) {
+    const inputValue = document.getElementById("search").value.toLowerCase();
+    const shopItems = document.getElementsByClassName(products);
+    for (var i = 0; i < products.length; i++) {
+      var products = products[i];
+      var itemText = products.textContent.toLowerCase();
+   
+      if (itemText.includes(inputValue)) {
+        shopItem.style.display = "unset";
+      } else {
+        products.style.display = "none";
+      }
+    }
+  }
+
