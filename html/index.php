@@ -71,6 +71,66 @@
             <img src="/assets/reclame.png" class="reclame">
         </div>
     </div>
+
+    <style>
+    /* Add some basic styling */
+    body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+    }
+    #searchBar {
+        margin-bottom: 20px;
+    }
+    #searchInput {
+        padding: 10px;
+        width: 300px;
+        font-size: 16px;
+    }
+    .item {
+        padding: 10px;
+        border: 1px solid #ddd;
+        margin-bottom: 5px;
+    }
+</style>
+</head>
+<body>
+
+<input type="text" id="searchInput" placeholder="Search for items..." onkeyup="filterItems()">
+
+<div id="itemList">
+    <div class="item">KopenHagen</div>
+    <div class="item">Brussel</div>
+    <div class="item">Berlijn</div>
+    <div class="item">Rome</div>
+    <div class="item">Warschau</div>
+    <div class="item">Stockholm</div>
+    <div class="item">Munchen</div>
+    <div class="item">Barcelona</div>
+    <div class="item">Madrid</div>
+    <div class="item">Zurich</div>
+    <div class="item">Wenen</div>
+    <div class="item">Amsterdam</div>
+</div>
+
+<script>
+    function filterItems() {
+        // Get the input value
+        let input = document.getElementById('searchInput').value.toLowerCase();
+        // Get the list of items
+        let items = document.getElementsByClassName('item');
+
+        // Loop through the items and hide those that don't match the search query
+        for (let i = 0; i < items.length; i++) {
+            let item = items[i];
+            if (item.innerHTML.toLowerCase().indexOf(input) > -1) {
+                item.style.display = "";
+            } else {
+                item.style.display = "none";
+            }
+        }
+    }
+</script>
+
     <div class="feet">
         <h1>Wil je op de hoogte blijven?</h1>
         <h4>Vul dan hier je email in voor weekelijkse updates</h4>
